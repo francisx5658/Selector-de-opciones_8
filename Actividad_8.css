@@ -1,0 +1,103 @@
+/* Configuración general de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Encabezados */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+h2 {
+    color: #7f8c8d;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Estilo para las etiquetas de los checkbox */
+label {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed;
+    width: 260px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s ease;
+    font-size: 16px;
+    color: #333333;
+}
+
+label:hover {
+    border-color: #3498db;
+    background-color: #f8fbfe;
+}
+
+/* Estilo del checkbox */
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    cursor: pointer;
+    accent-color: #3498db; /* Color cuando está marcado */
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 300px;
+    box-shadow: 0 3px 6px rgba(52, 152, 219, 0.3);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Estilo para cuando el botón está deshabilitado */
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Estilo para el mensaje de resultado */
+#resultado {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+    background-color: #e8f4fc;
+    padding: 10px 15px;
+    border-radius: 6px;
+    min-height: 20px;
+    text-align: center;
+}
